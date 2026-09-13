@@ -1,0 +1,202 @@
+{
+  "dataset_version": "conveyor-doc-prep-2026.1",
+  "scope": "2026 EU; standalone belt conveyor; preselected document preparation only. Not a complete CE checklist. Own paraphrases; no paid standards. Applicability has not been independently certified.",
+  "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006L0042",
+  "requirements": [
+    {
+      "requirement_id": "REQ-01",
+      "requirement_title": "유지보수 정보",
+      "requirement_description": "점검 주기와 작업 전 안전조치의 문서화 상태를 확인함.",
+      "regulation_reference": "Directive 2006/42/EC — Annex I 1.7.4.2(r), (s)",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006L0042",
+      "expert_required": false,
+      "fields": [
+        {
+          "key": "maintenance_interval",
+          "label": "정기 점검주기",
+          "question": "설계 담당자가 확인한 정기 점검주기를 입력해주세요."
+        },
+        {
+          "key": "maintenance_precautions",
+          "label": "점검 전 안전조치",
+          "question": "점검 전에 필요한 안전조치를 담당자에게 확인해주세요."
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ-02",
+      "requirement_title": "제품 식별",
+      "requirement_description": "제품 모델과 제조자 식별 정보를 찾아 문서 대상의 일치를 확인함.",
+      "regulation_reference": "Directive 2006/42/EC — Annex I 1.7.4.2(a), (b); Annex VII A",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006L0042",
+      "expert_required": false,
+      "fields": [
+        {
+          "key": "manufacturer",
+          "label": "제조자",
+          "question": "확인된 제조자 이름과 주소를 입력해주세요."
+        },
+        {
+          "key": "product_identity",
+          "label": "모델 식별",
+          "question": "대상 모델과 기계 명칭을 확인해주세요."
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ-03",
+      "requirement_title": "용도와 사용 한계",
+      "requirement_description": "의도된 사용과 사용 제한을 설명한 자료를 연결함.",
+      "regulation_reference": "Directive 2006/42/EC — Annex I 1.7.4.2(g), (h)",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006L0042",
+      "expert_required": false,
+      "fields": [
+        {
+          "key": "intended_use",
+          "label": "의도된 사용",
+          "question": "확인된 이송 대상과 사용 환경을 입력해주세요."
+        },
+        {
+          "key": "use_limits",
+          "label": "사용 제한",
+          "question": "확인된 사용 제한을 입력해주세요."
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ-04",
+      "requirement_title": "설치 정보",
+      "requirement_description": "설치와 고정에 관한 설명의 존재를 확인함. 고정 설계의 안전성은 판정하지 않음.",
+      "regulation_reference": "Directive 2006/42/EC — Annex I 1.7.4.2(i)",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006L0042",
+      "expert_required": false,
+      "fields": [
+        {
+          "key": "installation",
+          "label": "설치·고정 설명",
+          "question": "설계 담당자가 확인한 설치·고정 방법을 입력해주세요."
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ-05",
+      "requirement_title": "운전 조작 안내",
+      "requirement_description": "시동과 정지 조작에 관한 설명을 찾아 연결함.",
+      "regulation_reference": "Directive 2006/42/EC — Annex I 1.7.4.2(k)",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006L0042",
+      "expert_required": false,
+      "fields": [
+        {
+          "key": "controls",
+          "label": "운전 조작 설명",
+          "question": "확인된 시동·정지 조작 설명을 입력해주세요."
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ-06",
+      "requirement_title": "시험자료 대상 추적",
+      "requirement_description": "제공된 시험자료의 모델·조건을 추적함. 시험 필요 여부나 결과를 판정하지 않음.",
+      "regulation_reference": "Directive 2006/42/EC — Annex VII A 1(a): technical reports and test results",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006L0042",
+      "expert_required": true,
+      "fields": [
+        {
+          "key": "test_scope",
+          "label": "시험 대상·조건",
+          "question": "대상 모델 및 시험조건이 명시된 자료를 확보해주세요."
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ-07",
+      "requirement_title": "도면의 설계 버전",
+      "requirement_description": "제공된 도면 설명의 설계 버전과 현재 프로젝트 버전을 대조함.",
+      "regulation_reference": "Directive 2006/42/EC — Annex VII A 1(a): drawings",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006L0042",
+      "expert_required": false,
+      "fields": [
+        {
+          "key": "drawing_configuration",
+          "label": "도면 구성",
+          "question": "현재 설계 버전의 도면 설명과 식별자를 확인해주세요."
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ-08",
+      "requirement_title": "운송·취급 정보",
+      "requirement_description": "운송·취급 시 필요한 설명의 문서화 상태를 확인함.",
+      "regulation_reference": "Directive 2006/42/EC — Annex I 1.7.4.2(o)",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006L0042",
+      "expert_required": false,
+      "fields": [
+        {
+          "key": "handling",
+          "label": "운송·취급 설명",
+          "question": "확인된 운송·취급 지침을 담당자에게 요청해주세요."
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ-09",
+      "requirement_title": "방호 관련 근거",
+      "requirement_description": "방호 관련 설계 설명을 찾아 전문가 검토 대상으로 연결함. 안전거리나 충분성은 평가하지 않음.",
+      "regulation_reference": "Directive 2006/42/EC — Annex I 1.3.7, 1.4.1; Annex VII A",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006L0042",
+      "expert_required": true,
+      "fields": [
+        {
+          "key": "guarding",
+          "label": "방호 설명",
+          "question": "방호 설계 설명과 관련 검토자료를 확보해주세요."
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ-10",
+      "requirement_title": "소음 관련 정보",
+      "requirement_description": "소음 관련 문서를 찾고 판독 가능 여부를 확인함. 측정값이나 적절성을 판단하지 않음.",
+      "regulation_reference": "Directive 2006/42/EC — Annex I 1.7.4.2(u)",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006L0042",
+      "expert_required": true,
+      "fields": [
+        {
+          "key": "noise",
+          "label": "소음 관련 설명",
+          "question": "읽을 수 있는 소음 관련 자료와 적용 조건을 요청해주세요."
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ-11",
+      "requirement_title": "문서 변경 추적",
+      "requirement_description": "설계·문서 변경과 관련 자료 연결 이력을 확인함. 별도의 법정 변경이력 양식을 뜻하지 않음.",
+      "regulation_reference": "Directive 2006/42/EC — Annex VII A; 자체 작성 문서 추적 점검",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006L0042",
+      "expert_required": false,
+      "fields": [
+        {
+          "key": "revision_history",
+          "label": "변경 이력",
+          "question": "관련 설계·문서 변경 내역을 확인해주세요."
+        }
+      ]
+    },
+    {
+      "requirement_id": "REQ-12",
+      "requirement_title": "잔여 위험 안내",
+      "requirement_description": "잔여 위험 관련 안내 문장을 찾아 전문가가 이어 검토할 수 있게 함. 위험성평가를 수행하지 않음.",
+      "regulation_reference": "Directive 2006/42/EC — Annex I 1.7.4.2(l)",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006L0042",
+      "expert_required": true,
+      "fields": [
+        {
+          "key": "residual_risks",
+          "label": "잔여 위험 안내",
+          "question": "위험성평가 담당자가 확인한 안내와 원자료를 요청해주세요."
+        }
+      ]
+    }
+  ]
+}
